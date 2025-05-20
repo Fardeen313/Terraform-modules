@@ -4,10 +4,10 @@ variable "region" {
   default = "us-east-1"
 }
 
-variable "vpc-name" {
+variable "vpc_name" {
   description = "VPC Name for our Jumphost server"
   type = string
-  default = "Jumphost-vpc"
+  default = "Jumphost_vpc"
 }
 
 variable "igw-name" {
