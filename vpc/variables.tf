@@ -4,10 +4,10 @@ variable "region" {
   default = "us-east-1"
 }
 
-variable "vpc_name" {
+variable "vpc-name" {
   description = "VPC Name for our Jumphost server"
   type = string
-  default = "mario_vpc"
+  default = "Jumphost-vpc"
 }
 
 variable "igw-name" {
@@ -34,7 +34,7 @@ variable "rt-name" {
 }
 
 variable "sg-name" {
-  description = "SG-Mario"
+  description = "Security Group for our Jumphost server"
   type = string
   default = "Jumphost-sg"
 }
@@ -46,27 +46,27 @@ variable "iam-role" {
   default = "Jumphost-iam-role1"
 }
 
-#variable "ami_id" {
-  #description = "AMI ID for the EC2 instance"
-  #type        = string
- # default     = "ami-0bb84b8ffd87024d8" // Replace with the latest AMI ID for your region
-#}
+variable "ami_id" {
+  description = "AMI ID for the EC2 instance"
+  type        = string
+  default     = "ami-0bb84b8ffd87024d8" // Replace with the latest AMI ID for your region
+}
 
-#variable "instance_type" {
-# description = "EC2 instance type"
-#  type        = string
-#  default     = "t2.medium"
-# }
+variable "instance_type" {
+  description = "EC2 instance type"
+  type        = string
+  default     = "t2.medium"
+}
 
-#variable "key_name" {
-  #description = "EC2 keypair"
-  #type        = string
- # default     = "us-east-1"
-#}
+variable "key_name" {
+  description = "EC2 keypair"
+  type        = string
+  default     = "us-east-1"
+}
 
-#variable "instance_name" {
-#  description = "EC2 Instance name for the jumphost server"
-#  type        = string
-#  default     = "Jumphost-server"
-#}
+variable "instance_name" {
+  description = "EC2 Instance name for the jumphost server"
+  type        = string
+  default     = "Jumphost-server"
+}
 #
