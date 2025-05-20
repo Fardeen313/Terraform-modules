@@ -113,7 +113,7 @@ provider "aws" {
  # data source 
  data "aws_vpc" "main" {
   tags = {
-    Name = "mario_vpc"  # Specify the name of your existing VPC
+    Name = "Jumphost_vpc"  # Specify the name of your existing VPC
   }
 }
 
